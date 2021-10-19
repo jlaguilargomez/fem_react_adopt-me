@@ -6,12 +6,12 @@
 //   ]);
 // };
 
-const Pet = ({ name, age, size }) => {
+const Pet = ({ name, animal, breed }) => {
   return (
     <div>
       <h2>{name}</h2>
-      <h3>{age}</h3>
-      <h4>{size}</h4>
+      <h3>{animal}</h3>
+      <h4>{breed}</h4>
     </div>
   );
 };
