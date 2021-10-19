@@ -27,9 +27,14 @@ const SearchParams = () => {
     setLocation(e.target.value);
   }
 
+  function handleSubmit(e) {
+    e.preventDefault();
+    requestPets();
+  }
+
   return (
     <div className="search-params">
-      <form>
+      <form onSubmit={handleSubmit}>
         <label htmlFor="location">
           Location
           <input
