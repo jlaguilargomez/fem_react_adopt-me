@@ -10,7 +10,7 @@ const App = () => {
   const themeHook = useState("darkblue");
 
   return (
-    <ThemeContext.Provider value={them}>
+    <ThemeContext.Provider value={themeHook}>
       <div>
         <Router>
           <header>
